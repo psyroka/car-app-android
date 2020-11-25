@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
+
 
     <TextView
-        android:text="Logowanie"
+        android:text="Rejestracja"
         android:textSize="24sp"
         android:gravity="center"
         android:background="#D43C00"
@@ -34,19 +35,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:gravity="center"
+        android:hint="Adres email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+    android:id="@+id/dob"
+    android:inputType="date"
+    android:maxLines="1"
+    android:gravity="center"
+    android:hint="Data urodzenia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:inputType="text"
+        android:maxLines="1"
+        android:gravity="center"
+        android:hint="Miasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:layout_marginTop="24dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Logowanie" />
 
         <Button
             android:id="@+id/register"
@@ -55,11 +76,14 @@
             android:layout_height="wrap_content"
             android:text="Rejestracja" />
 
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Powrót" />
+
     </LinearLayout>
 
 
 
-
-
-
-</LinearLayout>
